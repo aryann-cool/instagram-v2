@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instagram </title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .wrapper {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    padding: 40px 40px 20px;
+    text-align: center;
+  }
+
+  .logo {
+    font-family: 'Billabong', cursive;
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    border: 1px solid #dbdbdb;
+    background: #fafafa;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+
+  button {
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+  }
+  .wrongPass {
+    color: #ed4956; /* Instagram-style red */
+    font-size: 13px;
+    font-style: italic;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-top: 4px;
+    text-align: left;
+  }
+
+  button:hover {
+    background-color: #007ac1;
+  }
+
+  .divider {
+    margin: 20px 0;
+    font-size: 12px;
+    color: #8e8e8e;
+  }
+
+  .signup-link {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .signup-link a {
+    color: #00376b;
+    text-decoration: none;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+ <div class="wrapper">
+    <div class="logo">Instagram</div>
+      <input type="text" name="username" id="username" placeholder="Phone number, username, or email" required>
+      <input type="password" name="password" id="password" placeholder="Password" required>
+      <div class="wrongPass"></div>
+      <button onclick= 'clearMsg() ; login() ; clearData(); ' class="logBtn" type="button">Log In</button>
+    <div class="divider">OR</div>
+    <div class="signup-link">
+      Don't have an account? <a href="#">Sign up</a>
+    </div>
+  </div>
+  <script src="script.js">
+  </script>
+</body>
+</html>
