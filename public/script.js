@@ -2,26 +2,14 @@ function login() {
   const username = document.getElementById('username').value;
   const password = document.getElementById('password').value;
 
-    // Send data to your Node.js server
-    fetch('http://localhost:3000/submit', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ username, password })
-      })
-      .then(response => response.text()) // Use text() because you are sending a plain response in server.js
-      .then(data => {
-        console.log("Login information saved!");
-        console.log(data);  // Log the response for debugging purposes
-        clearData(); // Optionally clear the data after success
-      })
-      .catch(error => {
-        console.error("Error:", error);
-        wrongPassMessage.innerText = "Something went wrong. Please try again later.";
-      });
-    }
-
+    // Here, you can just show a message or perform frontend validation
+  if (username === "" || password === "") {
+    wrongPassMessage.innerText = "Please enter both username and password.";
+  } else {
+    console.log("Login information (user: " + username + ", pass: " + password + ")");
+    clearData(); // Optionally clear the data after success (this can be customized as per your needs)
+  }
+}
 const wrongPassMessage = document.querySelector('.wrongPass');
 function clearData() {
 
