@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <style>
+    body {
+      background-image: url('Screenshot 2025-04-27 153533.png'); /* Replace with actual image URL */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Ensure body takes full height */
+    }
+
+    .signin-container {
+      background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .signin-container h1 {
+      font-size: 36px;
+    }
+
+    .signin-container p {
+      font-size: 18px;
+    }
+
+    .signin-button {
+      background-color: #0095f6;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+      display: inline-block;
+    }
+
+    .signin-button:hover {
+      background-color: #007ac1;
+    }
+  </style>
+</head>
+<body onclick="window.location.href='public/login.html'">
+
+  <div class="signin-container">
+    <h1>Sign in to view</h1>
+    <a href="public/login.html" class="signin-button">Sign In</a>
+  </div>
+
+</body>
+</html>
